@@ -51,7 +51,7 @@ func cadastrarLink() {
 
 	fmt.Println("Digite o link que deseja cadastrar: ")
 	fmt.Scanln(&link)
-	file.WriteString("\n"+link)
+	file.WriteString(link+"\n")
 
 }
 
