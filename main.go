@@ -10,6 +10,7 @@ import (
 
 )
 
+// Abre um link aleatório do arquivo file.txt no navegador padrão.
 func abrirLink() {
 	var lista []string
 
@@ -37,6 +38,7 @@ func abrirLink() {
 
 }
 
+// Pede ao usuário um link e o escreve no arquivo.
 func cadastrarLink() {
 	var link string
 
@@ -53,6 +55,7 @@ func cadastrarLink() {
 
 }
 
+// Sai da aplicação.
 func sair() {
 	fmt.Println("Saindo...")
 	time.Sleep(time.Second)
