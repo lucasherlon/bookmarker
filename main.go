@@ -34,7 +34,6 @@ func abrirLink() {
 	link := lista[num]
 
 	exec.Command("rundll32", "url.dll,FileProtocolHandler", link).Start()
-	file.Close()
 
 }
 
@@ -51,7 +50,7 @@ func cadastrarLink() {
 	fmt.Println("Digite o link que deseja cadastrar: ")
 	fmt.Scanln(&link)
 	file.WriteString("\n"+link)
-	file.Close()
+
 }
 
 func sair() {
